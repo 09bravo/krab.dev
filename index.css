@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./fonts/FiraCode-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+
 body {
   background-color: #634e46;
   margin: 0;
