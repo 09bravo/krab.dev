@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Fira Code';
-  src: url('./fonts/FiraCode-Regular.woff2') format('woff2');
+  src: url('./fonts/FiraCode-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
