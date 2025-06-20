@@ -11,23 +11,36 @@ body {
 }
 
 h2,h4 {
+    margin: 0;
+    text-align: center;
     background: repeating-linear-gradient(
-        to bottom,
+        to right,
         #ff5917 20%,
         #e65015 30%,
         #CC4712 70%        );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    background-size: auto 1000%;
-    animation: textShine 3.5s linear infinite;
+    background-size: 1000% auto;
+    animation: textShine 4s linear infinite;
+}
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.icon {
+    color: white;
+    font-size 3rem;
 }
 @keyframes textShine {
     0% {
-        background-position: 50% 0%;
+        background-position: 100% 50%;
     }
     100% {
-        background-position: 50% 100%;
+        background-position: 0% 50%;
     }
 }1
