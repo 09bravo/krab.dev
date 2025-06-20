@@ -7,44 +7,27 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: 'Fira Code', monospace;
+  overflow: hidden;
 }
 
-.content {
-  text-align: center;
+h2,h4 {
+    background: repeating-linear-gradient(
+        to bottom,
+        #ff5917 20%,
+        #e65015 30%,
+        #CC4712 70%        );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: auto 1000%;
+    animation: textShine 3.5s linear infinite;
 }
-
-h2,
-h4 {
-  background: linear-gradient(270deg, #ff5917, #ffffff);
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 4s ease-in-out infinite;
-  margin: 0;
-}
-
-h2 {
-  font-size: 5rem;
-  font-weight: bold;
-  margin-top: 1.5rem;
-}
-
-h4 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
+@keyframes textShine {
+    0% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 50% 100%;
+    }
+}1
