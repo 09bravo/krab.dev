@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
     applyAnimation(currentDirection);
   }, 4000);
 });
-
 window.addEventListener("load", function () {
   const img = document.querySelector(".loadingScreen img");
+  const direction = Math.random() < 0.5 ? "normal" : "reverse";
+  img.style.animation = `spin 5s linear infinite ${direction}`;
   img.style.opacity = "1";
   setTimeout(() => {
     document.querySelector(".loadingScreen").style.display = "none";
