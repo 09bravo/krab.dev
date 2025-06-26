@@ -16,10 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
     currentDirection = currentDirection === "Left" ? "Right" : "Left";
     applyAnimation(currentDirection);
   }, 4000);
+});
 
-  const loadingScreen = document.querySelector(".loadingScreen");
-
-  window.addEventListener("load", function () {
-    loadingScreen.style.display = "none";
-  });
+window.addEventListener("load", function () {
+  const img = document.querySelector(".loadingScreen img");
+  img.style.opacity = "1";
+  setTimeout(() => {
+    document.querySelector(".loadingScreen").style.display = "none";
+  }, 1000);
 });
