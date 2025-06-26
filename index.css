@@ -9,7 +9,30 @@ body {
   height: 100vh;
   overflow: hidden;
 }
-
+.loadingScreen img {
+    width: 150px;
+    height: 150px;
+    animation: spin 5s linear infinite;
+}
+.loadingScreen {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100vh;
+  background-color: #634e46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: spin 5s linear infinite;
+}
+@keyframes spin {
+	from {
+	transform: rotate(0deg);
+	}
+	to {
+	transform: rotate(360deg);
+	}
+}
 h2,h4 {
     margin: 0;
     text-align: center;
